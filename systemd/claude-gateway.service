@@ -1,0 +1,15 @@
+[Unit]
+Description=Claude Code Telegram Gateway
+After=network.target
+
+[Service]
+Type=simple
+User=gieljurriens
+WorkingDirectory=/home/gieljurriens/claude/gateway
+ExecStart=/home/gieljurriens/claude/gateway/venv/bin/python /home/gieljurriens/claude/gateway/gateway.py
+Restart=on-failure
+RestartSec=10
+Environment=PATH=/home/gieljurriens/.local/bin:/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target
