@@ -21,6 +21,7 @@ Telegram <──> claude-gateway <──> Claude Code CLI
 - Chat ID whitelist keeps the bot private
 - Interactive setup wizard (`claude-gateway setup`)
 - Optional systemd service for auto-start on boot
+- **Code blocks in responses** — code in Claude's output is automatically formatted as Telegram code blocks for easy reading and one-tap copying
 
 ---
 
