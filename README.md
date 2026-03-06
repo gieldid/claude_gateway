@@ -18,6 +18,7 @@ Telegram <──> claude-gateway <──> Claude Code CLI
 - Create new project directories with `/newproject`
 - Upload images directly to your current project folder
 - Cancel running Claude operations with `/stop`
+- Start a remote-control session with `/remote` — opens a `claude.ai` browser link so you can take over from your phone
 - Chat ID whitelist keeps the bot private
 - Interactive setup wizard (`claude-gateway setup`)
 - Optional systemd service for auto-start on boot
@@ -114,6 +115,8 @@ The bot will connect to Telegram and start listening for messages.
 | `/newproject <name>` | Create a new project directory and switch to it |
 | `/status` | Show current session info |
 | `/stop` | Cancel the current Claude operation |
+| `/remote` | Start a remote-control session and get a `claude.ai` URL |
+| `/stopremote` | Stop the active remote-control session |
 
 Any other message is forwarded directly to Claude Code.
 
